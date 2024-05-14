@@ -14,8 +14,6 @@
 
 * <a href="#telegram">Telegram уведомление</a>
 
-* <a href="#video">Видео пример прогона автотеста</a>
-
 <a id="cases"></a>
 ## Реализованные проверки
 
@@ -35,7 +33,7 @@
 gradle clean test
 ```
 <a id="jenkins"></a>
-## Запуск тестов в [Jenkins](https://jenkins.autotests.cloud/job/final_project_api/)
+## <img src="src/test/resources/media/logos/Jenkins.svg" alt="Jenkins" width="25" height="25"/> Запуск тестов в [Jenkins](https://jenkins.autotests.cloud/job/final_project_api/)
 
 #### Главная страница Jenkins
 
@@ -55,7 +53,7 @@ gradle clean test
 </p>
 
 <a id="allure"></a>
-## Отчет в [Allure Report](https://jenkins.autotests.cloud/job/final_project_api/allure/)
+## <img src="src/test/resources/media/logos/AllureReport.svg" alt="Allure Report" width="25" height="25"/></a> Отчет в [Allure Report](https://jenkins.autotests.cloud/job/final_project_api/allure/)
 
 #### Главная страница Allure Report
 
@@ -76,7 +74,7 @@ gradle clean test
 </p>
 
 <a id="allure-testops"></a>
-## Интеграция с [Allure TestOps](https://allure.autotests.cloud/launch/18515)
+## <img src="src/test/resources/media/logos/AllureTestOps.svg" width="25" height="25"/></a> Интеграция с [Allure TestOps](https://allure.autotests.cloud/launch/18515)
 
 #### Тест-кейсы
 
