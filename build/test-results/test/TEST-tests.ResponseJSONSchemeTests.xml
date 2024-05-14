@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="tests.ResponseJSONSchemeTests" tests="2" skipped="0" failures="0" errors="0" timestamp="2024-05-13T12:52:03" hostname="MacBook-Pro.local" time="2.073">
+<testsuite name="tests.ResponseJSONSchemeTests" tests="2" skipped="0" failures="0" errors="0" timestamp="2024-05-14T10:30:42" hostname="MacBook-Pro.local" time="1.893">
   <properties/>
-  <testcase name="checkNewsSectionNamesSuccessfulStatusCode()" classname="tests.ResponseJSONSchemeTests" time="1.35"/>
-  <testcase name="checkCorsNewsSectionNamesSuccessfulStatusCode()" classname="tests.ResponseJSONSchemeTests" time="0.721"/>
+  <testcase name="Проверка на JSON схему для заголовков новостей" classname="tests.ResponseJSONSchemeTests" time="1.437"/>
+  <testcase name="Проверка на JSON схему для заголовков новостей (CORS)" classname="tests.ResponseJSONSchemeTests" time="0.453"/>
   <system-out><![CDATA[Request URI:	https://ok.surf/api/v1/news-section-names
-HTTP/1.1 200 OK
 [
     "US",
     "World",
@@ -16,7 +15,6 @@ HTTP/1.1 200 OK
     "Health"
 ]
 Request URI:	https://ok.surf/api/v1/cors/news-section-names
-HTTP/1.1 200 OK
 [
     "US",
     "World",

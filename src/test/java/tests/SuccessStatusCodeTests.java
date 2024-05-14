@@ -1,81 +1,100 @@
 package tests;
 
-import io.restassured.http.ContentType;
+import io.qameta.allure.*;
 import models.lombok.NewsSectionLombokModel;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
+import tests.annotations.Layer;
 
 import java.util.List;
 
+import static io.qameta.allure.Allure.step;
 import static io.restassured.RestAssured.given;
+import static specs.BaseSpec.baseRequestSpec;
+import static specs.BaseSpec.baseResponseSpec;
 
+@Layer("rest api")
+@Feature("Позитивные тесты на статус код")
+@Owner("Ruslan Bogoutdinov")
 public class SuccessStatusCodeTests {
     @Test
+    @Story("Получение списка новостей (CORS)")
+    @Severity(SeverityLevel.BLOCKER)
+    @DisplayName("Позитивная проверка на статус код при получении списка новостей (CORS)")
     void checkCorsNewsFeedSuccessfulStatusCode(){
-        given()
-                .log().uri()
-        .when()
-                .get("https://ok.surf/api/v1/cors/news-feed")
-        .then()
-                .log().status()
-                .log().body()
-                .statusCode(200);
+        step("Отправка запроса на получение списка новостей (CORS)", () -> {
+            given(baseRequestSpec)
+            .when()
+                    .get("https://ok.surf/api/v1/cors/news-feed")
+            .then()
+                    .spec(baseResponseSpec)
+                    .statusCode(200);
+        });
     }
 
     @Test
+    @Story("Получение списка заголовков новостей (CORS)")
+    @Severity(SeverityLevel.CRITICAL)
+    @DisplayName("Позитивная проверка на статус код при получении списка заголовков новостей")
     void checkCorsNewsSectionNamesSuccessfulStatusCode(){
-        given()
-                .log().uri()
-        .when()
-                .get("https://ok.surf/api/v1/cors/news-section-names")
-        .then()
-                .log().status()
-                .log().body()
-                .statusCode(200);
+        step("Отправка запроса на получение списка заголовков новостей", () -> {
+            given(baseRequestSpec)
+            .when()
+                    .get("https://ok.surf/api/v1/cors/news-section-names")
+            .then()
+                    .spec(baseResponseSpec)
+                    .statusCode(200);
+        });
     }
 
     @Test
+    @Story("Получение списка новостей")
+    @Severity(SeverityLevel.BLOCKER)
+    @DisplayName("Позитивная проверка на статус код при получении списка новостей")
     void checkNewsFeedSuccessfulStatusCode(){
-        given()
-                .log().uri()
-        .when()
-                .get("https://ok.surf/api/v1/news-feed")
-        .then()
-                .log().status()
-                .log().body()
-                .statusCode(200);
+        step("Отправка запроса на получение списка новостей", () -> {
+            given(baseRequestSpec)
+            .when()
+                    .get("https://ok.surf/api/v1/news-feed")
+            .then()
+                    .spec(baseResponseSpec)
+                    .statusCode(200);
+        });
     }
 
     @Test
+    @Story("Получение списка новостей по определенным заголовкам")
+    @Severity(SeverityLevel.CRITICAL)
+    @DisplayName("Позитивная проверка на статус код при получении списка новостей по определенным заголовкам")
     void checkNewsSectionSuccessfulStatusCode(){
         List<String> params = List.of("Business", "Sports", "Technology");
 
         NewsSectionLombokModel newsSectionLombokModel = new NewsSectionLombokModel();
         newsSectionLombokModel.setSections(params);
 
-        NewsSectionLombokModel responseModel = given()
-                .log().uri()
-                .body(newsSectionLombokModel)
-                .contentType(ContentType.JSON)
-        .when()
-                .post("https://ok.surf/api/v1/news-section")
-        .then()
-                .log().status()
-                .log().body()
-                .statusCode(200)
-                .extract().as(NewsSectionLombokModel.class);
-
-        //todo провека ответа
+        step("Отправка запроса на получение списка новостей по определенным заголовкам", () -> {
+            given(baseRequestSpec)
+                    .body(newsSectionLombokModel)
+                    .when()
+                    .post("https://ok.surf/api/v1/news-section")
+                    .then()
+                    .spec(baseResponseSpec)
+                    .statusCode(200);
+        });
     }
 
     @Test
+    @Story("Получение списка заголовков новостей")
+    @Severity(SeverityLevel.CRITICAL)
+    @DisplayName("Позитивная проверка на статус код при получении списка заголовков новостей")
     void checkNewsSectionNamesSuccessfulStatusCode(){
-        given()
-                .log().uri()
-        .when()
-                .get("https://ok.surf/api/v1/news-section-names")
-        .then()
-                .log().status()
-                .log().body()
-                .statusCode(200);
+        step("Отправка запроса на получение списка заголовков новостей", () -> {
+            given(baseRequestSpec)
+            .when()
+                    .get("https://ok.surf/api/v1/news-section-names")
+            .then()
+                    .spec(baseResponseSpec)
+                    .statusCode(200);
+        });
     }
 }
