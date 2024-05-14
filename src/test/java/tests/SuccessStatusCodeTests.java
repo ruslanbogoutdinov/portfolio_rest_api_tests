@@ -35,7 +35,7 @@ public class SuccessStatusCodeTests {
     @Test
     @Story("Получение списка заголовков новостей (CORS)")
     @Severity(SeverityLevel.CRITICAL)
-    @DisplayName("Позитивная проверка на статус код при получении списка заголовков новостей")
+    @DisplayName("Позитивная проверка на статус код при получении списка заголовков новостей (CORS)")
     void checkCorsNewsSectionNamesSuccessfulStatusCode(){
         step("Отправка запроса на получение списка заголовков новостей", () -> {
             given(baseRequestSpec)
