@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="tests.ResponseJSONSchemeTests" tests="2" skipped="0" failures="0" errors="0" timestamp="2024-05-14T10:30:42" hostname="MacBook-Pro.local" time="1.893">
+<testsuite name="tests.ResponseJSONSchemeTests" tests="2" skipped="0" failures="0" errors="0" timestamp="2024-05-14T11:07:33" hostname="MacBook-Pro.local" time="3.101">
   <properties/>
-  <testcase name="Проверка на JSON схему для заголовков новостей" classname="tests.ResponseJSONSchemeTests" time="1.437"/>
-  <testcase name="Проверка на JSON схему для заголовков новостей (CORS)" classname="tests.ResponseJSONSchemeTests" time="0.453"/>
+  <testcase name="Проверка на JSON схему для заголовков новостей" classname="tests.ResponseJSONSchemeTests" time="2.483"/>
+  <testcase name="Проверка на JSON схему для заголовков новостей (CORS)" classname="tests.ResponseJSONSchemeTests" time="0.606"/>
   <system-out><![CDATA[Request URI:	https://ok.surf/api/v1/news-section-names
 [
     "US",

@@ -26,7 +26,7 @@ public class ResponseParamsCheckTests {
         List<NewsFeedLombokModel> list = step("Отправка запроса на получение списка новостей (CORS)", () ->
                 given(baseRequestSpec)
                 .when()
-                        .get("https://ok.surf/api/v1/cors/news-feed")
+                        .get("/cors/news-feed")
                 .then()
                         .spec(baseResponseSpec)
                         .extract().body().jsonPath().getList("Business", NewsFeedLombokModel.class));
@@ -48,7 +48,7 @@ public class ResponseParamsCheckTests {
         List<NewsFeedLombokModel> list = step("Отправка запроса на получение списка новостей", () ->
                 given(baseRequestSpec)
                 .when()
-                        .get("https://ok.surf/api/v1/news-feed")
+                        .get("/news-feed")
                 .then()
                         .spec(baseResponseSpec)
                         .extract().body().jsonPath().getList("Business", NewsFeedLombokModel.class));

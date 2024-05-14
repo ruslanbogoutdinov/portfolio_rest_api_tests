@@ -14,7 +14,10 @@ public class BaseSpec {
     public static RequestSpecification baseRequestSpec = with()
             .filter(withCustomTemplates())
             .log().uri()
-            .contentType(ContentType.JSON);
+            .contentType(ContentType.JSON)
+            .baseUri("https://ok.surf")
+            .basePath("/api/v1");
+
 
     public static ResponseSpecification baseResponseSpec = new ResponseSpecBuilder()
             .log(STATUS)

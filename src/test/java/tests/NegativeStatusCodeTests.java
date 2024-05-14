@@ -22,7 +22,7 @@ public class NegativeStatusCodeTests {
         step("Отправка запроса на получение списка новостей (CORS)", () -> {
             given(baseRequestSpec)
             .when()
-                    .get("https://ok.surf/api/v1/cors/news-feed")
+                    .get("/cors/news-feed")
             .then()
                     .spec(baseResponseSpec)
                     .statusCode(400);
@@ -37,7 +37,7 @@ public class NegativeStatusCodeTests {
         step("Отправка запроса на получение списка заголовков новостей", () -> {
             given(baseRequestSpec)
             .when()
-                    .get("https://ok.surf/api/v1/cors/news-section-names")
+                    .get("/cors/news-section-names")
             .then()
                     .spec(baseResponseSpec)
                     .statusCode(400);
@@ -52,7 +52,7 @@ public class NegativeStatusCodeTests {
         step("Отправка запроса на получение списка новостей", () ->{
             given(baseRequestSpec)
             .when()
-                    .get("https://ok.surf/api/v1/news-feed")
+                    .get("/news-feed")
             .then()
                     .spec(baseResponseSpec)
                     .statusCode(400);

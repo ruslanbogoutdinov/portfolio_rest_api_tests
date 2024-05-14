@@ -24,7 +24,7 @@ public class ResponseJSONSchemeTests {
         step("Отправка запроса на проверку JSON схемы у заголовков новостей (CORS)", () -> {
             given(baseRequestSpec)
             .when()
-                    .get("https://ok.surf/api/v1/cors/news-section-names")
+                    .get("/cors/news-section-names")
             .then()
                     .spec(baseResponseSpec)
                     .body(matchesJsonSchemaInClasspath("schemes/news_section_response_scheme.json"));
@@ -39,7 +39,7 @@ public class ResponseJSONSchemeTests {
         step("Отправка запроса на проверку JSON схемы у заголовков новостей", () -> {
             given(baseRequestSpec)
             .when()
-                    .get("https://ok.surf/api/v1/news-section-names")
+                    .get("/news-section-names")
             .then()
                     .spec(baseResponseSpec)
                     .body(matchesJsonSchemaInClasspath("schemes/news_section_response_scheme.json"));

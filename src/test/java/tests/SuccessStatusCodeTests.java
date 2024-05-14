@@ -25,7 +25,7 @@ public class SuccessStatusCodeTests {
         step("Отправка запроса на получение списка новостей (CORS)", () -> {
             given(baseRequestSpec)
             .when()
-                    .get("https://ok.surf/api/v1/cors/news-feed")
+                    .get("/cors/news-feed")
             .then()
                     .spec(baseResponseSpec)
                     .statusCode(200);
@@ -40,7 +40,7 @@ public class SuccessStatusCodeTests {
         step("Отправка запроса на получение списка заголовков новостей", () -> {
             given(baseRequestSpec)
             .when()
-                    .get("https://ok.surf/api/v1/cors/news-section-names")
+                    .get("/cors/news-section-names")
             .then()
                     .spec(baseResponseSpec)
                     .statusCode(200);
@@ -55,7 +55,7 @@ public class SuccessStatusCodeTests {
         step("Отправка запроса на получение списка новостей", () -> {
             given(baseRequestSpec)
             .when()
-                    .get("https://ok.surf/api/v1/news-feed")
+                    .get("/news-feed")
             .then()
                     .spec(baseResponseSpec)
                     .statusCode(200);
@@ -76,7 +76,7 @@ public class SuccessStatusCodeTests {
             given(baseRequestSpec)
                     .body(newsSectionLombokModel)
                     .when()
-                    .post("https://ok.surf/api/v1/news-section")
+                    .post("/news-section")
                     .then()
                     .spec(baseResponseSpec)
                     .statusCode(200);
@@ -91,7 +91,7 @@ public class SuccessStatusCodeTests {
         step("Отправка запроса на получение списка заголовков новостей", () -> {
             given(baseRequestSpec)
             .when()
-                    .get("https://ok.surf/api/v1/news-section-names")
+                    .get("/news-section-names")
             .then()
                     .spec(baseResponseSpec)
                     .statusCode(200);
