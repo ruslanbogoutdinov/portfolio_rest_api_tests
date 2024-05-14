@@ -1,33 +1,22 @@
-# Проект по автоматизации тестирования API для [reqres.in](https://reqres.in/)
+# Демо-проект по автоматизации тестирования API сайта [ok.surf](https://ok.surf/)
 
 ## Содержание
 
-- [Технологии и инструменты](#технологии-и-инструменты)
-- [Реализованныe проверки](#реализованные-проверки)
-- [Запуск тестов из терминала](#запуск-тестов-из-терминала)
-- [Запуск тестов в Jenkins](#запуск-тестов-в-jenkins)
-- [Отчет о результатах тестирования в Allure Report](#отчет-о-результатах-тестирования-в-Allure-report)
-- [Интеграция с Allure TestOps](#интеграция-с-allure-testops)
-- [Интеграция с Jira](#интеграция-с-jira)
-- [Уведомления в Telegram с использованием бота](#уведомления-в-telegram-с-использованием-бота)
+* <a href="#cases">Реализованные проверки</a>
 
-## Технологии и инструменты
+* <a href="#console">Запуск тестов из терминала</a>
 
-<p  align="center">
+* <a href="#jenkins">Запуск тестов в Jenkins</a>
 
-<img width="5%" title="IntelliJ IDEA" src="media/icons/Idea.svg">
-<img width="5%" title="Java" src="media/icons/Java.svg">
-<img width="5%" title="Gradle" src="media/icons/Gradle.svg">
-<img width="5%" title="Gradle" src="media/icons/RestAssured.svg">
-<img width="5%" title="Junit5" src="media/icons/Junit5.svg">
-<img width="5%" title="GitHub" src="media/icons/GitHub.svg">
-<img width="5%" title="Allure Report" src="media/icons/Allure.svg">
-<img width="5%" title="Allure TestOps" src="media/icons/Allure_TO.svg">
-<img width="5%" title="Jenkins" src="media/icons/Jenkins.svg">
-<img width="5%" title="Jira" src="media/icons/Jira.svg">
-<img width="5%" title="Telegram" src="media/icons/Telegram.svg">
-</p>
+* <a href="#allure">Отчет в Allure Report</a>
 
+* <a href="#allure-testops">Интеграция с Allure TestOps</a>
+
+* <a href="#telegram">Telegram уведомление</a>
+
+* <a href="#video">Видео пример прогона автотеста</a>
+
+<a id="cases"></a>
 ## Реализованные проверки
 
 - [x] *Успешная регистрация*
@@ -39,12 +28,13 @@
 - [x] *Поиск пользователя*
 - [x] *Удаление пользователя*
 
+<a id="console"></a>
 ## Запуск тестов из терминала
 
 ```bash
 gradle clean test
 ```
-
+<a id="jenkins"></a>
 ## Запуск тестов в [Jenkins](https://jenkins.autotests.cloud/job/final_project_api/)
 
 #### Главная страница Jenkins
@@ -57,13 +47,15 @@ gradle clean test
 
 Результаты сборки можно посмотреть в Allure отчёте, кликнув на значок <code><strong>*Allure Report*</strong></code>.
 
-#### Значок Allure Report
+<a id="allure_report_and_allure_testops"></a>
+#### Значки Allure Report и Allure TestOps
 
 <p align="center">
   <img src="media/screen/jenkins_allure.png" alt="jenkins_allure" width="800">
 </p>
 
-## Отчет о результатах тестирования в [Allure Report](https://jenkins.autotests.cloud/job/final_project_api/allure/)
+<a id="allure"></a>
+## Отчет в [Allure Report](https://jenkins.autotests.cloud/job/final_project_api/allure/)
 
 #### Главная страница Allure Report
 
@@ -83,6 +75,7 @@ gradle clean test
   <img src="media/screen/allure_graphs.PNG" alt="allure_graphs" width="800">
 </p>
 
+<a id="allure-testops"></a>
 ## Интеграция с [Allure TestOps](https://allure.autotests.cloud/launch/18515)
 
 #### Тест-кейсы
@@ -97,15 +90,8 @@ gradle clean test
   <img src="media/screen/dashboards.PNG" alt="dashboards" width="800">
 </p>
 
-## Интеграция с [Jira](https://jira.autotests.cloud/browse/HOMEWORK-503)
-
-#### Задача в Jira
-
-<p align="center">
-  <img src="media/screen/jira.PNG" alt="jira" width="800">
-</p>
-
-## Уведомления в Telegram с использованием бота
+<a id="telegram"></a>
+## <img src="src/test/resources/media/logos/Telegram.svg" width="25" height="25"/></a> Telegram уведомление
 
 #### Оповещение о результатах сборки
 
