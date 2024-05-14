@@ -1,7 +1,7 @@
 # Демо-проект по автоматизации тестирования API сайта [ok.surf](https://ok.surf/)
 
 <p align="center">
-  <img title="OKSurf" src="src/test/resources/media/images/OkSurf.png" alt="OKSurf">
+  <img title="OKSurf" src="src/test/resources/media/screenshots/OKSurf.png" alt="OKSurf">
 </p>
 
 ## Содержание
