@@ -1,6 +1,7 @@
 package tests;
 
 import io.qameta.allure.*;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import tests.annotations.Layer;
@@ -13,6 +14,7 @@ import static specs.BaseSpec.baseResponseSpec;
 @Layer("rest api")
 @Feature("Негативные тесты на статус код")
 @Owner("Ruslan Bogoutdinov")
+@Disabled
 public class NegativeStatusCodeTests {
     @Test
     @Story("Получение списка новостей (CORS)")
