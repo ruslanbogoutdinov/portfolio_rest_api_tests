@@ -41,7 +41,7 @@
 gradle clean test
 ```
 <a id="jenkins"></a>
-## <img src="src/test/resources/media/logos/Jenkins.svg" alt="Jenkins" width="25" height="25"/> Запуск тестов в [Jenkins](https://jenkins.autotests.cloud/job/final_project_api/)
+## <img src="src/test/resources/media/logos/Jenkins.svg" alt="Jenkins" width="25" height="25"/> Запуск тестов в [Jenkins](https://jenkins.autotests.cloud/job/portfolio_api_tests/)
 
 #### Главная страница Jenkins
 
@@ -62,7 +62,7 @@ gradle clean test
 > на просмотр страниц с тестовой документацией и отчетов.
 
 <a id="allure"></a>
-## <img src="src/test/resources/media/logos/AllureReport.svg" alt="Allure Report" width="25" height="25"/></a> Отчет в [Allure Report](https://jenkins.autotests.cloud/job/final_project_api/allure/)
+## <img src="src/test/resources/media/logos/AllureReport.svg" alt="Allure Report" width="25" height="25"/></a> Отчет в [Allure Report](https://jenkins.autotests.cloud/job/portfolio_api_tests/allure/)
 
 #### Главная страница Allure Report
 
