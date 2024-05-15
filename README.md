@@ -102,6 +102,6 @@ gradle clean test
 
 #### Оповещение о результатах сборки
 
-<p align="center">
-  <img title="Telegram" src="src/test/resources/media/screenshots/Telegram.png" alt="Telegram" width="800">
+<p>
+  <img title="Telegram notification" src="src/test/resources/media/screenshots/Telegram.png" alt="Telegram notification" width="500">
 </p>
