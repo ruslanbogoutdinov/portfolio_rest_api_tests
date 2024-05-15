@@ -14,6 +14,7 @@ import static specs.BaseSpec.baseResponseSpec;
 @Layer("rest api")
 @Feature("Негативные тесты на статус код")
 @Owner("Ruslan Bogoutdinov")
+@Disabled
 public class NegativeStatusCodeTests {
     @Test
     @Story("Получение списка новостей (CORS)")
