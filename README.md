@@ -83,18 +83,18 @@ gradle clean test
 </p>
 
 <a id="allure-testops"></a>
-## <img src="src/test/resources/media/logos/AllureTestOps.svg" width="25" height="25"/></a> Интеграция с [Allure TestOps](https://allure.autotests.cloud/launch/18515)
+## <img src="src/test/resources/media/logos/AllureTestOps.svg" width="25" height="25"/></a> Интеграция с [Allure TestOps](https://allure.autotests.cloud/launch/39052)
 
 #### Тест-кейсы
 
 <p align="center">
-  <img src="media/screen/testops_tests.PNG" alt="testops_tests" width="800">
+  <img title="Allure TestOps tests" src="src/test/resources/media/screenshots/AllureTestOpsTests.png" alt="Allure TestOps tests" width="800">
 </p>
 
 #### Дашборды
 
 <p align="center">
-  <img src="media/screen/dashboards.PNG" alt="dashboards" width="800">
+  <img title="Allure TestOps dashboards" src="src/test/resources/media/screenshots/AllureTestOpsDashboards.png" alt="Allure TestOps dashboards" width="800">
 </p>
 
 <a id="telegram"></a>
