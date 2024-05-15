@@ -67,19 +67,19 @@ gradle clean test
 #### Главная страница Allure Report
 
 <p align="center">
-  <img src="media/screen/allure_mainpage.PNG" alt="allure_main" width="800">
+  <img title="Allure Report overview" src="src/test/resources/media/screenshots/AllureReportMain.png" alt="Allure Report overview" width="800">
 </p>
 
 #### Тесты
 
 <p align="center">
-  <img src="media/screen/allure_tests.PNG" alt="allure_tests" width="800">
+  <img title="Allure Report tests" src="src/test/resources/media/screenshots/AllureTests.png" alt="Allure Report tests" width="800">
 </p>
 
 #### Графики
 
 <p align="center">
-  <img src="media/screen/allure_graphs.PNG" alt="allure_graphs" width="800">
+  <img title="Allure Report graphs" src="src/test/resources/media/screenshots/AllureGraphs.png" alt="Allure Report graphs" width="800">
 </p>
 
 <a id="allure-testops"></a>
