@@ -49,7 +49,7 @@ gradle clean test
   <img src="src/test/resources/media/screenshots/Jenkins.png" alt="Jenkins" width="800">
 </p>
 
-> Для запуска сборки необходимо нажать <strong>*Build Now*</strong>.
+> Для запуска сборки необходимо нажать <code><strong>*Build Now*</strong></code>.
 
 <a id="allure_report_and_allure_testops"></a>
 #### Значки Allure Report и Allure TestOps
