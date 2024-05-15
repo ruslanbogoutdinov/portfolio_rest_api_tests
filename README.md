@@ -46,12 +46,10 @@ gradle clean test
 #### Главная страница Jenkins
 
 <p align="center">
-  <img src="media/screen/jenkins_mainpage.PNG" alt="Jenkins" width="800">
+  <img src="src/test/resources/media/screenshots/Jenkins.png" alt="Jenkins" width="800">
 </p>
 
-Для запуска сборки необходимо нажать кнопку <code><strong>*Собрать сейчас*</strong></code>.
-
-Результаты сборки можно посмотреть в Allure отчёте, кликнув на значок <code><strong>*Allure Report*</strong></code>.
+> Для запуска сборки необходимо нажать <strong>*Build Now*</strong>.
 
 <a id="allure_report_and_allure_testops"></a>
 #### Значки Allure Report и Allure TestOps
