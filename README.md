@@ -46,7 +46,7 @@ gradle clean test
 #### Главная страница Jenkins
 
 <p align="center">
-  <img src="src/test/resources/media/screenshots/Jenkins.png" alt="Jenkins" width="800">
+  <img title="Jenkins" src="src/test/resources/media/screenshots/Jenkins.png" alt="Jenkins" width="800">
 </p>
 
 > Для запуска сборки необходимо нажать <code><strong>*Build Now*</strong></code>.
@@ -55,8 +55,11 @@ gradle clean test
 #### Значки Allure Report и Allure TestOps
 
 <p align="center">
-  <img src="media/screen/jenkins_allure.png" alt="jenkins_allure" width="800">
+  <img title="AllureButtons" src="src/test/resources/media/screenshots/AllureButtons.png" alt="AllureButtons" width="800">
 </p>
+
+> Клик по иконкам <code><strong>*Allure TestOps*</strong></code> и <code><strong>*Allure Report*</strong></code> позволяет перейти
+> на просмотр страниц с тестовой документацией и отчетов.
 
 <a id="allure"></a>
 ## <img src="src/test/resources/media/logos/AllureReport.svg" alt="Allure Report" width="25" height="25"/></a> Отчет в [Allure Report](https://jenkins.autotests.cloud/job/final_project_api/allure/)
