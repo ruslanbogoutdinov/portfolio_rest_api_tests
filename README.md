@@ -46,7 +46,7 @@ gradle clean test
 #### Главная страница Jenkins
 
 <p align="center">
-  <img src="src/test/resources/media/screenshots/Jenkins.png" alt="Jenkins" width="800">
+  <img src="src/test/resources/media/screenshots/Jenkinsf.png" alt="Jenkins" width="800">
 </p>
 
 > Для запуска сборки необходимо нажать <strong>*Build Now*</strong>.
