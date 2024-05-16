@@ -85,6 +85,10 @@ gradle clean test
 <a id="allure-testops"></a>
 ## <img src="src/test/resources/media/logos/AllureTestOps.svg" width="25" height="25"/></a> Интеграция с [Allure TestOps](https://allure.autotests.cloud/launch/39052)
 
+> В <code><strong>*Allure TestOps*</strong></code> есть возможность наблюдать за выполнением тестов в реальном времени.
+
+> Данные для входа в <code><strong>*Allure TestOps*</strong></code>: <code><strong>*username:*</strong></code>allure8 <code><strong>*password:*</strong></code>allure8
+
 #### Тест-кейсы
 
 <p align="center">
